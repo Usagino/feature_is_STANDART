@@ -4,11 +4,33 @@ header{
   background-color: white;
   .headerwrap{
     text-align: center;
+    height: 120px;
     img{
       text-align: center;
       width: 280px;
       height: auto;
       margin: 0 auto;
+    }
+  }
+  .header_bgtitle{
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 120px);
+    background-size: cover;
+    background-position: 50% ;
+    overflow: hidden;
+    background-image: url(../material/header_bigimage.JPG);
+    &::before {
+      content: '';
+      position: absolute;
+      /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      background: inherit;
+
+      filter: blur(5px);
     }
   }
 }

@@ -1,8 +1,9 @@
 @charset "UTF-8";
 p {
-  font-feature-settings: "palt";
   font-size: 17px;
   line-height: 34px;
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
 
 body {
@@ -49,6 +50,7 @@ header .header_bgtitle::before {
 }
 
 main .contents_1 {
+  text-align: justify;
   padding: 60px 0;
   margin: auto;
   width: 720px;
@@ -60,6 +62,12 @@ main .contents_2 {
   left: 0px;
   margin: auto;
   width: 840px;
+  height: 600px;
+}
+
+main .contents_2_wrap {
+  width: 840px;
+  height: 600px;
 }
 
 main .contents_2_left {
@@ -85,5 +93,60 @@ main .contents_2_right {
 
 main .contents_2_right p {
   padding: 30px;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.26);
+}
+
+main .image_carousel {
+  margin-top: 700px;
+  text-align: center;
+  max-width: 100vw;
+}
+
+main .image_carousel div {
+  position: absolute;
+  left: -200px;
+}
+
+main .image_carousel div a {
+  color: #3c3c3c;
+}
+
+main .image_carousel div h2 {
+  padding: 50px 0 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+main .image_carousel div:nth-child(1) {
+  animation: trans 20s linear 0s infinite;
+}
+
+main .image_carousel div:nth-child(2) {
+  animation: trans 20s linear 4s infinite;
+}
+
+main .image_carousel div:nth-child(3) {
+  animation: trans 20s linear 8s infinite;
+}
+
+main .image_carousel div:nth-child(4) {
+  animation: trans 20s linear 12s infinite;
+}
+
+main .image_carousel div:nth-child(5) {
+  animation: trans 20s linear 16s infinite;
+}
+
+main .image_carousel div img {
+  height: auto;
+  width: 200px;
+}
+
+@keyframes trans {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 200px));
+  }
 }

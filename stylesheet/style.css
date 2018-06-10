@@ -5,6 +5,10 @@ p {
   line-height: 34px;
 }
 
+body {
+  background-color: #F8F8F8;
+}
+
 header {
   width: 100vw;
   background-color: white;
@@ -52,12 +56,14 @@ main .contents_1 {
 
 main .contents_2 {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  right: 0px;
+  left: 0px;
   margin: auto;
+  width: 840px;
 }
 
 main .contents_2_left {
+  z-index: 10;
   position: absolute;
 }
 
@@ -67,6 +73,11 @@ main .contents_2_left img {
 }
 
 main .contents_2_right {
+  border-radius: 5px;
+  background-color: white;
+  top: 30px;
+  right: 0;
+  z-index: 20;
   position: absolute;
   width: 450px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);

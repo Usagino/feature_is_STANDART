@@ -1,14 +1,15 @@
-@font-face {
-  font-family: "basictitlefont";
-  src: url("material/basictitlefont.ttf");
+header {
+  width: 100vw;
+  background-color: white;
 }
 
-@font-face {
-  font-family: "Wingdings2";
-  src: url("material/Wingdings2.ttf");
+header .headerwrap {
+  text-align: center;
 }
 
-@font-face {
-  font-family: "Nagomi";
-  src: url("material/Nagomi.ttf");
+header .headerwrap img {
+  text-align: center;
+  width: 280px;
+  height: auto;
+  margin: 0 auto;
 }

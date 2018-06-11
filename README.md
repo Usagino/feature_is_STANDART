@@ -1,9 +1,10 @@
 # feature_is_STANDART
+under construction
 ---
 ## Assignment
 
 
-**<span style="color: red; ">under construction</span>**
+
 
 
 Tomidokoro's assignment
@@ -17,7 +18,7 @@ Language, software, service used
 - pug
 - sass(scss)
 - html
-- css
+- cssft
 - adobe XD
 - adobe Illustrator
 - Atom

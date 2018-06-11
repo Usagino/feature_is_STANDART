@@ -1,13 +1,14 @@
 # feature_is_STANDART
 ---
-## 授業の課題
-富所先生の授業課題。
+## Assignment
+Tomidokoro's assignment
 
-既存の雑誌の特集を取り扱うwebサイトを作る課題。
+Make web site dealing with features of existing magazines
 
-こだわったポイントは下部のカルーセルをcssアニメーションで作った。
+The sticking point was made by css animation of the lower carousel.
 
-使用言語、ソフト、サービス
+Language, software, service used
+
 - pug
 - sass(scss)
 - html

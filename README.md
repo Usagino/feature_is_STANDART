@@ -5,7 +5,7 @@ Tomidokoro's assignment
 
 Make web site dealing with features of existing magazines
 
-The sticking point was made by css animation of the lower carousel.
+The sticking point was made by css animation of the lower carousel.
 
 Language, software, service used
 

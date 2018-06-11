@@ -1,6 +1,11 @@
 # feature_is_STANDART
 ---
 ## Assignment
+
+
+**<span style="color: red; ">under construction</span>**
+
+
 Tomidokoro's assignment
 
 Make web site dealing with features of existing magazines
@@ -17,6 +22,7 @@ Language, software, service used
 - adobe Illustrator
 - Atom
 - Github
+
 
 ## siteimage
 ![](https://i.imgur.com/mimdibv.png)

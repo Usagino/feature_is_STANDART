@@ -195,6 +195,7 @@ main .contents_5 .image_carousel_wrap img {
 @keyframes trans {
   0% {
     -webkit-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
     transform: translateX(-200px);
   }
   100% {

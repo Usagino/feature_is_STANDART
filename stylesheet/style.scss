@@ -34,24 +34,32 @@ header{
   right: 0;
   left: 0;
   z-index: 99;
-  width: 100%;
-
   height: auto;
-  // background-color: white;
+
   .headerwrap{
     position: relative;
     z-index: 3;
     max-width: 1200px;
     padding: 0 30px;
     margin: 0 auto;
-
-    img{
-      float: left;
-      text-align: center;
-      width: 225px;
-      height: auto;
-      margin: 0 auto;
+    .logo_wrap{
+      .logo {
+        position: relative;
+        display: block;
+        height: 100%;
+        max-width: 300px;
+        padding: 10px 0;
+      }
+      img{
+        float: left;
+        text-align: center;
+        width: 225px;
+        height: 110px;
+        height: auto;
+        margin: 0 auto;
+      }
     }
+
     .header_nav{
       float: right;
       .navigation{
@@ -65,10 +73,16 @@ header{
           display: inline-block;
         }
         li{
+          margin: 12px 0;
           position: relative;
           display: inline;
           padding-bottom: 20px;
           line-height: 100%;
+
+          ::before{
+            content: "";
+            padding: 30px;
+          }
         }
       }
     }
@@ -80,8 +94,6 @@ main{
       background-size: cover;
       background-position: 50% 60%;
       overflow: hidden;
-      background-attachment: fixed;
-
       background-image: url(../material/header_bigimage.JPG);
       display: block;
       width: 100%;

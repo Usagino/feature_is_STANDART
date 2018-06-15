@@ -109,12 +109,26 @@ main article .header_bgtitle {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+main article .header_bgtitle ::before {
+  position: relative;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
 }
 
 main .contents_1 {
   padding: 60px 0;
   margin: auto;
   width: 720px;
+}
+
+main .contents_1 .active {
+  color: red;
 }
 
 main .contents_2 {
@@ -237,6 +251,10 @@ main .contents_5 .image_carousel_wrap:nth-child(5) {
 main .contents_5 .image_carousel_wrap img {
   height: auto;
   width: 200px;
+}
+
+main .black {
+  color: black;
 }
 
 @-webkit-keyframes trans {

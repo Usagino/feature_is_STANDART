@@ -106,7 +106,16 @@ main{
       -webkit-user-select: none;
       -moz-user-select: none;
       user-select: none;
+      -webkit-filter:blur(5px);
+      filter:blur(5px);
+      ::before{
+        position: relative;
+        top:-5px;
+        bottom: -5px;
+        right: -5px;
+        left: -5px;
 
+      }
     }
   }
   .contents_1{
@@ -114,6 +123,11 @@ main{
     padding: 60px 0;
     margin: auto;
     width: 720px;
+
+    .active{
+      color: red;
+
+    }
   }
   .contents_2{
     position: absolute;
@@ -213,7 +227,9 @@ main{
     }
   }
 
-
+.black{
+  color: black;
+}
   @-webkit-keyframes trans{
     0%{
       -webkit-transform: translateX(-200px);

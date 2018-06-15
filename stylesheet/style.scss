@@ -8,7 +8,12 @@ $deray:4;
   font-style: normal;
   font-weight: normal;
 }
-
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+li{
+  margin: 12px 0;
+}
 p{
   font-size: 17px;
   line-height: 34px;
@@ -18,21 +23,27 @@ p{
 body{
   background-color: #F8F8F8;
   font-family: "Karla",sans-serif;
+  color: #060c0c;
+  font-size: 16px;
+  line-height: 1.625;
 }
 header{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
 
-  width: 100vw;
   height: auto;
-  background-color: white;
+  // background-color: white;
   .headerwrap{
-    position: fixed;
+    position: relative;
+    z-index: 3;
     max-width: 1200px;
-    text-align: center;
-    height: 110px;
-    width: 100%;
     padding: 0 30px;
     margin: 0 auto;
-    z-index: 10;
 
     img{
       float: left;
@@ -43,30 +54,49 @@ header{
     }
     .header_nav{
       float: right;
-    }
-  }
-  .header_bgtitle{
-
-    position: relative;
-    width: 100vw;
-    height:100vh;
-    background-size: cover;
-    background-position: 50% ;
-    overflow: hidden;
-    background-image: url(../material/header_bigimage.JPG);
-    &::before {
-      content: '';
-      position: absolute;
-      /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
-      top: -5px;
-      bottom: -5px;
-      left: -5px;
-      right: -5px;
-      background: inherit;
+      .navigation{
+        display: inline-block;
+        padding: 0 30px 0 0;
+        text-align: left;
+        position: relative;
+        a{
+          padding: 13px 20px;
+          color: white;
+          display: inline-block;
+        }
+        li{
+          position: relative;
+          display: inline;
+          padding-bottom: 20px;
+          line-height: 100%;
+        }
+      }
     }
   }
 }
 main{
+  article{
+    .header_bgtitle {
+      background-size: cover;
+      background-position: 50% 60%;
+      overflow: hidden;
+      background-attachment: fixed;
+
+      background-image: url(../material/header_bigimage.JPG);
+      display: block;
+      width: 100%;
+      height: 100vh;
+      max-width: 100%;
+      max-height: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+
+    }
+  }
   .contents_1{
 
     padding: 60px 0;

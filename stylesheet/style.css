@@ -1,9 +1,16 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Single Product Webicons Regular";
   src: url("//cdn.shopify.com/s/files/1/1695/6607/t/5/assets/singleproductwebicons-regular.eot?%23iefix&10260784498269242388") format("embedded-opentype"), url("//cdn.shopify.com/s/files/1/1695/6607/t/5/assets/singleproductwebicons-regular.woff?10260784498269242388") format("woff"), url("//cdn.shopify.com/s/files/1/1695/6607/t/5/assets/singleproductwebicons-regular.ttf?10260784498269242388") format("truetype"), url("//cdn.shopify.com/s/files/1/1695/6607/t/5/assets/singleproductwebicons-regular.svg%23singleproduct_web_iconsregular?10260784498269242388") format("svg");
   font-style: normal;
   font-weight: normal;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+li {
+  margin: 12px 0;
 }
 
 p {
@@ -16,23 +23,28 @@ p {
 body {
   background-color: #F8F8F8;
   font-family: "Karla",sans-serif;
+  color: #060c0c;
+  font-size: 16px;
+  line-height: 1.625;
 }
 
 header {
-  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
   height: auto;
-  background-color: white;
 }
 
 header .headerwrap {
-  position: fixed;
+  position: relative;
+  z-index: 3;
   max-width: 1200px;
-  text-align: center;
-  height: 110px;
-  width: 100%;
   padding: 0 30px;
   margin: 0 auto;
-  z-index: 10;
 }
 
 header .headerwrap img {
@@ -47,25 +59,43 @@ header .headerwrap .header_nav {
   float: right;
 }
 
-header .header_bgtitle {
+header .headerwrap .header_nav .navigation {
+  display: inline-block;
+  padding: 0 30px 0 0;
+  text-align: left;
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: 50%;
-  overflow: hidden;
-  background-image: url(../material/header_bigimage.JPG);
 }
 
-header .header_bgtitle::before {
-  content: '';
-  position: absolute;
-  /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
-  top: -5px;
-  bottom: -5px;
-  left: -5px;
-  right: -5px;
-  background: inherit;
+header .headerwrap .header_nav .navigation a {
+  padding: 13px 20px;
+  color: white;
+  display: inline-block;
+}
+
+header .headerwrap .header_nav .navigation li {
+  position: relative;
+  display: inline;
+  padding-bottom: 20px;
+  line-height: 100%;
+}
+
+main article .header_bgtitle {
+  background-size: cover;
+  background-position: 50% 60%;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-image: url(../material/header_bigimage.JPG);
+  display: block;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 main .contents_1 {

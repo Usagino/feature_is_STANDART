@@ -1,26 +1,9 @@
-@-webkit-keyframes trans {
-  0% {
-    -webkit-transform: translateX(-200px);
-    -ms-transform: translateX(-200px);
-    transform: translateX(-200px);
-  }
-  100% {
-    -webkit-transform: translateX(calc(100vw + 200px));
-    -ms-transform: translateX(calc(100vw + 200px));
-    transform: translateX(calc(100vw + 200px));
-  }
-}
-
 @keyframes trans {
   0% {
-    -webkit-transform: translateX(-200px);
-    -ms-transform: translateX(-200px);
     transform: translateX(-200px);
   }
   100% {
-    -webkit-transform: translateX(calc(100vw + 200px));
-    -ms-transform: translateX(calc(100vw + 200px));
-    transform: translateX(calc(100vw + 200px));
+    transform: translateX(200px) translateX(100vw);
   }
 }
 
@@ -223,6 +206,10 @@ main .contents_5 {
 main .contents_5 h1 {
   text-align: center;
   padding: 30px 0;
+}
+
+main .contents_5 .image_carousel {
+  position: relative;
 }
 
 main .contents_5 .image_carousel_wrap {

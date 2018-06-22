@@ -193,7 +193,8 @@ main{
       position:relative;
       &_wrap{
         position: absolute;
-        left: -200px;
+        // left: -200px;
+        transform: translateX(-200px);
         a{
           color:rgb(60, 60, 60);
           text-align: center;

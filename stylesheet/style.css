@@ -231,7 +231,7 @@ main .contents_5 .image_carousel {
 
 main .contents_5 .image_carousel_wrap {
   position: absolute;
-  left: -200px;
+  transform: translateX(-200px);
 }
 
 main .contents_5 .image_carousel_wrap a {

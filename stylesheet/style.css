@@ -12,7 +12,7 @@
 }
 
 .header_change .logo_wrap .logo {
-  transform: scale(0.7) translateY(-20px);
+  transform: scale(0.7) translateY(-20px) translateX(-10px);
 }
 
 .header_change .header_nav .navigation {
@@ -121,34 +121,49 @@ header .headerwrap .header_nav .navigation li ::before {
 }
 
 main .header_bgtitle {
+  height: 100vh;
+  width: 100vw;
   position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  overflow: hidden;
+  margin: 0 auto 0;
+}
+
+main .header_bgtitle:before {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  content: "";
+  height: calc(100vh + 20px);
+  width: calc(100vw + 20px);
   background-position: center;
   background-size: cover;
   background-position: 50% 60%;
   background-image: url(../material/header_bigimage.JPG);
   display: block;
-  margin-top: 110px;
-  height: 100vh;
-  width: 100vw;
+}
+
+main .titlebox {
+  padding-top: 40px;
+  width: 720px;
   margin: 0 auto;
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
+}
+
+main .titlebox h1 {
+  font-size: 30px;
 }
 
 main .contents_1 {
-  padding: 60px 0;
+  position: relative;
+  padding: 20px 0;
   margin: auto;
   width: 720px;
 }
 
 main .contents_2 {
-  position: absolute;
-  right: 0px;
-  left: 0px;
+  padding: 20px 0;
+  position: relative;
   margin: auto;
   width: 840px;
   height: 600px;
@@ -186,7 +201,7 @@ main .contents_2_right p {
 }
 
 main .contents_3 {
-  padding-top: 690px;
+  padding: 20px 0;
   margin: auto;
   width: 720px;
 }
@@ -194,7 +209,7 @@ main .contents_3 {
 main .contents_4 {
   width: 720px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 20px 0;
 }
 
 main .contents_4_left, main .contents_4_right {

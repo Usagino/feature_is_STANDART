@@ -95,43 +95,49 @@ header{
   }
 }
 main{
-
   .header_bgtitle {
-    position: relative;
-
-    top: 0; bottom: 0;
-    right: 0; left: 0;
-
-    background-position: center;
-    background-size: cover;
-    background-position: 50% 60%;
-    background-image: url(../material/header_bigimage.JPG);
-    display: block;
-    margin-top:110px;
+    $blur:5px;
     height: 100vh; width: 100vw;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 0;
 
-    margin: 0 auto;
-    // -ms-user-select: none;
-    // -webkit-user-select: none;
-    // -moz-user-select: none;
-    // user-select: none;
-
-    -webkit-filter:blur(5px);
-    filter:blur(5px);
+    &:before{
+      -webkit-filter:blur($blur);
+      filter:blur($blur);
+      position: absolute;
+      top: #{$blur * -1 * 2};
+      left: #{$blur * -1 * 2};
+      content: "";
+      height: calc(100vh + #{$blur * 4}); width: calc(100vw + #{$blur * 4});
+      background-position: center;
+      background-size: cover;
+      background-position: 50% 60%;
+      background-image: url(../material/header_bigimage.JPG);
+      display: block;
+    }
 
   }
+  .titlebox{
+    padding-top: 40px;
+    width: 720px;
+    margin: 0 auto;
+    h1{
+      font-size: 30px;
+    }
+  }
   .contents_1{
+    position: relative;
 
-    padding: 60px 0;
+    padding: 20px 0;
     margin: auto;
     width: 720px;
 
 
   }
   .contents_2{
-    position: absolute;
-    right:0px;
-    left:0px;
+    padding: 20px 0;
+    position: relative;
     margin:auto;
     width: 840px;
 
@@ -139,7 +145,6 @@ main{
     &_wrap{
       width: 840px;
       height: 600px;
-
     }
     &_left{
       z-index: 10;
@@ -167,14 +172,14 @@ main{
     }
   }
   .contents_3{
-    padding-top: $contents2_height + 90px ;
+    padding: 20px 0;
     margin: auto;
     width: 720px;
   }
   .contents_4{
     width: 720px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 20px 0;
     &_left,&_right{
       float: left;
       p{

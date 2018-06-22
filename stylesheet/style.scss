@@ -41,7 +41,9 @@ header{
   right: 0; left: 0;
   z-index: 99;
   height: 110px;
-
+  .logo{
+    transform: scale(1) translateY(5px);
+  }
   .headerwrap{
     position: relative;
     z-index: 3;
@@ -59,21 +61,21 @@ header{
         margin: 0 auto;
       }
     }
-
     .header_nav{
       float: right;
       .navigation{
         display: inline-block;
-        padding: 2em 30px 0 0;
+        padding: 0 30px 0 0;
         text-align: left;
         position: relative;
+        line-height: 7em;
+        @include transition;
         a{
           padding: 13px 20px;
           color: $black;
           display: inline-block;
         }
         li{
-
           margin: 12px 0;
           position: relative;
           display: inline;
@@ -190,7 +192,7 @@ main{
       padding: 30px 0;
     }
     .image_carousel{
-      
+
       &_wrap{
         position:absolute;
 

@@ -12,10 +12,14 @@
 
 .header_change{
   height: 70px;
-  .logo_wrap{
-    img{
-
+  .logo_wrap{//つまりヘッダータグ
+    .logo{
       transform: scale(0.7) translateY(-20px);
+    }
+  }
+  .header_nav{
+    .navigation{
+      line-height: 4.5em !important;
     }
   }
 }

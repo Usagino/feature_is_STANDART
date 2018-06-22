@@ -208,10 +208,6 @@ main .contents_5 h1 {
   padding: 30px 0;
 }
 
-main .contents_5 .image_carousel {
-  position: relative;
-}
-
 main .contents_5 .image_carousel_wrap {
   position: absolute;
   left: -200px;

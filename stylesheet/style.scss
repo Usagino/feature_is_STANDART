@@ -191,6 +191,8 @@ main{
     }
     .image_carousel{
       &_wrap{
+        position: absolute;
+        left: -200px;
         a{
           color:rgb(60, 60, 60);
           text-align: center;
@@ -204,9 +206,6 @@ main{
             text-align: center;
           }
         }
-
-        position: absolute;
-        left: -200px;
         @for $value from 1 through ($book_count){
           &:nth-child(#{$value}){
             $value_deray:$value * $deray - 4;
@@ -221,12 +220,6 @@ main{
     }
   }
 
-.black{
-  color: black;
-}
 
-}
 
-.opactiy{
-  opacity: 0;
 }

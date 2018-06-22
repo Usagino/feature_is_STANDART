@@ -190,9 +190,9 @@ main{
       padding: 30px 0;
     }
     .image_carousel{
-      position:relative;
+      // position:relative;
       &_wrap{
-        position: absolute;
+        position: relative;
         // left: -200px;
         transform: translateX(-200px);
         a{

@@ -1,0 +1,36 @@
+@-webkit-keyframes trans{
+  0%{
+    -webkit-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+  100%{
+    -webkit-transform: translateX(calc(100vw + 200px));
+    -ms-transform: translateX(calc(100vw + 200px));
+    transform: translateX(calc(100vw + 200px));
+  }
+}
+
+
+@keyframes trans{
+  0%{
+    -webkit-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+  100%{
+    -webkit-transform: translateX(calc(100vw + 200px));
+    -ms-transform: translateX(calc(100vw + 200px));
+    transform: translateX(calc(100vw + 200px));
+  }
+}
+
+.header_change{
+  height: 70px;
+  .logo_wrap{
+    img{
+
+      transform: scale(0.7) translateY(-20px);
+    }
+  }
+}

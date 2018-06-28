@@ -5,11 +5,13 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet" href="https://use.typekit.net/zqb5hza.css")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet")
         link(href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet")
         link(rel="stylesheet" href="stylesheet/reset.css")
         link(rel="stylesheet" href="stylesheet/style.css")
         title STANDARTJAPAN
         script(src="https://use.typekit.net/zqb5hza.js")
+        
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
     body
       header
@@ -37,26 +39,26 @@ html(lang="en")
           
         div.titlebox
           h1 バリスタのキャリアプラン
-        div.contents_1
+        div.contents_1.contents
           p コーヒー関係の仕事をしている人に、どうしてコーヒーに惹きつけられたのか、そして魅了され続けているのはなぜかと聞くと、必ず大きな理由のひとつに「人」が出てきますマニアックかつ社交的で、楽しませることが好きな人が多いコーヒー業界。彼らが形成する緊密でグローバルなコミュニティでは、情熱の伝播が起きやすく、スペシャルティコーヒーの人気が高まるにつれて、コーヒー愛飲家の世界にはよりウェルカムな空気が広がっています魅力ある人柄やクリエイティブな考え方が業界全体に充満し、互いを刺激し合っているのですでは、どうしてコーヒーを淹れる仕事を続けるのはそんなに難しいのでしょうか?
-        div.contents_2
+        div.contents_2.contents
           div.contents2_wrap
             div.contents_2_left
               img(src="material/contents_2_left.png")
             div.contents_2_right
               p ほとんどの場合、この問いはコーヒーショップの入門レベル、特にバリスタの仕事に関係しています。(地域によっては、入門レベルの仕事が皿洗いやカウンターの裏方ということもあるかもしれませんが、バリスタがすべてやっているところが多いです)バリスタは、最前線に立つ戦士であり、おもてなしをする大使であり、職人技を披露するエンターテイナでもあります彼らこそ、多くの人にとっては初めてとなる、美味しいコーヒーとの意義ある体験を演出する人たちなのです良質な(さらには至高の)コーヒーショップは世界中で急速に増え、多くの収益を上げていますしかし、コーヒー業界が成長し続けるには、ピラミッドの底辺であり労働力の大部分を占めるバリスタの仕事が、長続きしなしという事実について考える必要があるでしょう。
-        div.contents_3
-          h2 バリスタに仕事を与える
+        div.contents_3.contents
+          h1 バリスタに仕事を与える
           p まず、コーヒーショップやロースターを運営する企業における典型的なキャリアパスは、「恐ろしく先細っている」ことを認めなければなりません。 SquareMile Coffee RoastersのJames Hoffmannはブログ記事「Coffee is a Dead-End Job (コーヒーの仕事は行き詰まっている)」や自身のポッドキャスト「Coffee Jobs」で、そのように語っています。コーヒ-ショップ のカウンターの後ろから伸びるキャリアパスは、その会社の限られた仕事にしか繋がっていないと想像すると、選択肢は本当に限られてしまいますバリスタを経て人の管理や教育ができるようになり、マネージャーやトレイナー、はたまた品質管理担当者や焙煎担当者になり、最終的には生豆の買い付けで世界中を飛び回る夢のような人生を送るというのは、現実よりも少し夢を見過ぎているかもしれません。
           
-        div.contents_4
+        div.contents_4.contents
           
           div.contents4_wrap
             div.contents_4_left
               img(src="material/contents_4_left.png")
             div.contents_4_right
-              p とても魅力的なロールモデルを輩出してきたこの業界で、生豆の買い付けはひと握りの人だけができる、特別な仕事であるということは知っておくべきです自分の農場をチェックするために、Geoff WattsやAleco chigounisやTim Wendelboeが飛行機でコロンビアに降り立つのを、誰もが羨ましいと思っていますよね? それが(会社を引き継ぐことに次いで業界トップの仕事だという考えは理解できますしかし、そのような仕事は数が限られているだけでなく、単に誰に
-        div.contents_5
+              p とても魅力的なロールモデルを輩出してきたこの業界で、生豆の買い付けはひと握りの人だけができる、特別な仕事であるということは知っておくべきです自分の農場をチェックするために、Geoff WattsやAleco chigounisやTim Wendelboeが飛行機でコロンビアに降り立つのを、誰もが羨ましいと思っていますよね? それが(会社を引き継ぐことに次いで業界トップの仕事だという考えは理解できますしかし、そのような仕事は数が限られているだけでないでしょう。
+        div.contents_5.contents
           h1 バックナンバー
           div.image_carousel
             each val in [1, 2, 3, 4, 5]
@@ -67,7 +69,43 @@ html(lang="en")
                   p ¥1,450
                   
       footer
-      
+        div.newslater
+          h3 NEWSLATER
+          p ニュースレターにぜひご登録ください！
+          p standartの最新情報をお届けします。
+          form#contact_form.contact-form(method='post', action='/contact#contact_form', accept-charset='UTF-8')
+            input(name='form_type', value='customer', type='hidden')
+            input(name='utf8', value='✓', type='hidden')
+            input#contact_tags(name='contact[tags]', value='newsletter', type='hidden')
+            input.input-field.inline-field-input(name='contact[email]', placeholder='Emailアドレスをご入力ください。', type='email')
+            input.inline-field-submit.button.secondary(name='subscribe', value='登録', type='submit')
+        div.footer_wrap
+          div.footer_wrap_box
+            div.footer_wrap_essential
+              h2 ESSENTIAL
+              ul
+                li FAQ
+                li お取り扱い店
+                li パートナーシップ
+            div.footer_wrap_additional
+              h2 ADDITIONAL
+              ul 
+                li キーワード検索
+                li プレスキット
+                li 管理者情報
+                li 利用規約
+            div.findusonline
+              h2 FIND US ONLINE
+              ul 
+                li facebook
+                li Twitter
+                li instagram
+                li vimo
+          div.footer_wrap_copyright
+            p © 2018. All rights reserved.
+            p   Developed by <a href="https://www.standartmag.com">Standart</a> and friends.
+
+            
       
       
       script(type="text/javascript" src="script/jquery-3.3.1.min.js")

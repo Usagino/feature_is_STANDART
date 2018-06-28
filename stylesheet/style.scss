@@ -15,8 +15,10 @@ $deray:4;
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
 }
-h1 {
+h1{
   font-family: "source-han-serif-japanese";
+  font-size: 30px;
+  padding: 30px 0 10px;
   }
 li{
   margin: 12px 0;
@@ -36,8 +38,9 @@ body{
   line-height: 1.625;
 }
 header{
-  background-color: $white;
-  border-bottom: 0.5px solid $gray;
+
+  background-color: transparent;
+  border-bottom: 0.5px solid transparent;
   @include transition;
   position: fixed;
   z-index: 10;
@@ -49,6 +52,7 @@ header{
     transform: scale(1) translateY(5px);
   }
   .navigation{
+
     line-height: 7em;
   }
   .headerwrap{
@@ -69,6 +73,10 @@ header{
       }
     }
     .header_nav{
+      a{
+        text-shadow: 0px 5px 10px rgba(150, 150, 150, 0.64);
+        color: white;
+      }
       float: right;
       .navigation{
         display: inline-block;
@@ -79,7 +87,6 @@ header{
         @include transition;
         a{
           padding: 13px 20px;
-          color: $black;
           display: inline-block;
         }
         li{
@@ -99,6 +106,9 @@ header{
   }
 }
 main{
+  .contents{
+    position: relative;
+  }
   .header_bgtitle {
     $blur:5px;
     height: 100vh; width: 100vw;
@@ -117,24 +127,17 @@ main{
       background-position: center;
       background-size: cover;
       background-position: 50% 60%;
-      background-image: url(../material/header_bigimage.JPG);
+      background-image: url(../material/bgimage.jpg);
       display: block;
     }
 
   }
   .titlebox{
-    padding-top: 40px;
     width: 720px;
     margin: 0 auto;
-    h1{
-      font-size: 30px;
-
-    }
   }
   .contents_1{
-    position: relative;
 
-    padding: 20px 0;
     margin: auto;
     width: 720px;
 
@@ -142,7 +145,7 @@ main{
   }
   .contents_2{
     padding: 20px 0;
-    position: relative;
+
     margin:auto;
     width: 840px;
 
@@ -177,14 +180,13 @@ main{
     }
   }
   .contents_3{
-    padding: 20px 0;
+
     margin: auto;
     width: 720px;
   }
   .contents_4{
     width: 720px;
     margin: 0 auto;
-    padding: 20px 0;
     &_left,&_right{
       float: left;
       p{
@@ -200,29 +202,28 @@ main{
   }
   .contents_5{
     padding-top: 400px;
+    display: block;
     h1{
       text-align: center;
-      padding: 30px 0;
     }
     .image_carousel{
-
+      position: relative;
+      height: 400px;
       &_wrap{
         position:absolute;
-
         left: -200px;
-
         a{
           color:rgb(60, 60, 60);
           text-align: center;
-          h2{
-            padding: 50px 0 10px 0;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 16px;
-          }
-          p{
-            text-align: center;
-          }
+        }
+        h2{
+          padding: 50px 0 10px 0;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 700;
+          font-size: 16px;
+        }
+        p{
+          text-align: center;
         }
         @for $value from 1 through ($book_count){
           &:nth-child(#{$value}){
@@ -237,7 +238,97 @@ main{
       }
     }
   }
+}
+footer{
+  margin-top: 60px;
+  .newslater{
+    background-color: #ffd13b;
+    h3,p{
+      text-align: center;
+    }
+    h3{
+      font-family: "Montserrat",sans-serif;
+      padding: 50px 0;
+      font-size: 1.25rem;
+      font-weight: bold;
+      letter-spacing: inherit;
+      color: #060c0c;
+      text-align: center;
+      text-transform: none;
+      font-size: 1.0625rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    #contact_form{
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 50px;
+      .input-field{
+        color: #060c0c;
+        background-color: transparent;
+        padding: 15px;
+        border: 1px solid #060c0c;
+        border-radius: 5px;
+        display: inline-block;
+        width: calc(60% - 15px);
+        margin-right: 15px;
+        font-size: 0.875rem;
+        vertical-align: middle;
+      }
+      .inline-field-submit{
+        padding: 1px;
+        font-size: 14px;
+        display: inline-block;
+        width: 30%;
+        padding: 15px 20px;
+        background-color: #696d6d;
+        border-radius: 5px;
+        border: 1px solid #696d6d;
+      }
+    }
 
 
+
+
+
+
+  }
+  .footer_wrap{
+    color: #ffd13b;
+    background-color: #060c0c;
+    h2{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: white;
+      padding-bottom: 20px;
+    }
+    &_box{
+      max-width: 1020px;
+      padding: 50px 30px;
+      margin: 0 auto;
+      font-size: 0.875rem;
+      @include grid(18.3% 18.3% 18.3%,1fr, 0px);
+    }
+    &_copyright{
+
+      color: rgba(255,209,59,0.5);
+      max-width: 1020px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+
+      p{
+        font-size: 14px;
+        line-height: 1.5em;
+      }
+
+      a{
+        line-height: 1em;
+        font-size: 14px;
+        color: #ffd13b;
+        display: inline;
+      }
+    }
+  }
 
 }

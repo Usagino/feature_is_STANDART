@@ -1,5 +1,5 @@
 # feature_is_STANDART
-under construction
+
 ---
 ## Assignment
 
@@ -24,4 +24,4 @@ Language, software, service used
 ## pageURL
 <a href="https://usagino.github.io/feature_is_STANDART.github.io/" target="_blank">feature is STANDART</a>
 ## siteimage
-![](https://i.imgur.com/mimdibv.png)
+![](https://i.imgur.com/yU6CZCw.jpg)

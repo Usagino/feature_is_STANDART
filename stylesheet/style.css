@@ -355,8 +355,11 @@ footer .newslater #contact_form .inline-field-submit {
 }
 
 footer .footer_wrap {
-  color: #ffd13b;
   background-color: #060c0c;
+}
+
+footer .footer_wrap a {
+  color: #ffd13b;
 }
 
 footer .footer_wrap h2 {

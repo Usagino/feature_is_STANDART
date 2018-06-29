@@ -43,10 +43,13 @@ $box_all_desktop: 1000px;
 @mixin grid($columns,$rows,$gap) {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: $columns;
+  grid-template-columns: $columns;
 
-      grid-template-columns: $columns;
 
-      grid-template-rows: $rows;
+
+  grid-template-rows: $rows;
+  -ms-grid-rows:  $rows;
   grid-gap: $gap;
 
 

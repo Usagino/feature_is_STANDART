@@ -286,7 +286,7 @@ footer{
       padding: 50px 30px;
       margin: 0 auto;
       font-size: 0.875rem;
-      @include grid(18.3% 18.3% 18.3%,1fr, 0px);
+      @include grid(18.3% 18.3% 18.3%,1fr,0px);
     }
     @for $wrap_num from 1 through 3{
       &_#{$wrap_num}{
@@ -294,10 +294,7 @@ footer{
         -ms-grid-row: 1;
       }
     }
-
-
     &_copyright{
-
       color: rgba(255,209,59,0.5);
       max-width: 1020px;
       margin: 0 auto;

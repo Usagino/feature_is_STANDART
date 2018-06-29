@@ -384,8 +384,8 @@ footer .footer_wrap_box {
 
 @media all and (-ms-high-contrast: none) {
   footer .footer_wrap_box {
-    -ms-grid-columns: 18.3% 18.3% 18.3%;
-    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 18.3% 18.3% 18.3% !important;
+    -ms-grid-rows: 1fr !important;
   }
 }
 

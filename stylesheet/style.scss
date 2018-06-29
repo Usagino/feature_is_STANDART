@@ -308,6 +308,13 @@ footer{
       margin: 0 auto;
       font-size: 0.875rem;
       @include grid(18.3% 18.3% 18.3%,1fr, 0px);
+
+    }
+    @media all and (-ms-high-contrast: none){
+      &_box{
+        -ms-grid-columns: 18.3% 18.3% 18.3%;
+        -ms-grid-rows: 1fr;
+      }
     }
     &_copyright{
 

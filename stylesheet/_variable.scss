@@ -43,11 +43,16 @@ $box_all_desktop: 1000px;
 @mixin grid($columns,$rows,$gap) {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: $columns;
+
       grid-template-columns: $columns;
-  -ms-grid-rows: $rows;
+
+
       grid-template-rows: $rows;
   grid-gap: $gap;
+  @media all and (-ms-high-contrast: none){
+    -ms-grid-columns: $columns;
+    -ms-grid-rows: $rows;
+  }
 
 }
 @mixin more_btn($color,$width,$height) {

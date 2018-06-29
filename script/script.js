@@ -3,7 +3,7 @@
 function init() {
     // スクロールして何ピクセルでアニメーションさせるか
 
-    var px_change = 300;
+    var px_change = 200;
     var book_count = 5;
     var hide = 0.3;
     var delay = 4;
